@@ -2,14 +2,17 @@
 
 // 1. Declara una variable `puntuacion`.
 const puntuacion = 90
+
 // 2. Condicional if/else.
-if (puntuacion >= 70) {}
+if (puntuacion >= 70) {
     console.log(`Aprobado`)
 } else {
     console.log(`Reprobado`)
 }
+
 // 3. Declara una variable `dia`.
 const dia = 5
+
 // 4. Switch para días de la semana.
 switch (dia) {
     case 1:
@@ -33,11 +36,19 @@ switch (dia) {
     case 7:
         console.log('Domingo')
         break
-    default
+    default:
         console.log('Día inválido')
 }
-// 5. Declaración de función convertirFahrenheit.
 
+// 5. Declaración una variable temperatura.
+const temperaturaCelsius = 36
 
+// 6. Declaración de función convertirFahrenheit.
+function convertirFahrenheit(celsius) {
+    return (celsius * 9) / 5 + 32
+}
 
+// 7. Utiliza la función convertirFahrenheit.
+const temperaturaFahrenheit = convertirFahrenheit(temperaturaCelsius)
+console.log(`Temperatura en Fahrenheit: ${temperaturaFahrenheit}`)
 
